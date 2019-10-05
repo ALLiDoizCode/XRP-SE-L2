@@ -1,18 +1,5 @@
 const core = require('ilp-settlement-core')
 
-const accountServices = {
-    
-    sendMessage: async (accountId, message) => {
-        //logic
-    },
-    creditSettlement: (accountId, amount, settlementId) => {
-        //logic
-    },
-    trySettlement: (accountId) => {
-        //logic
-    }
-}
-
 const settlementEngine =  (services) => {
     /*
         services.sendMessage(accountId, message)
@@ -46,7 +33,6 @@ const createEngine = async (services) => {
 }
 
 async function run() {
-    const engine = await createEngine(accountServices)
     await core.startServer(createEngine)
 }
 
