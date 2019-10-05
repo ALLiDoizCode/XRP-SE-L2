@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/b20160/XRP-SE-L2/issues"
   },
-  "homepage": "https://github.com/b20160/XRP-SE-L2#readme"
+  "homepage": "https://github.com/b20160/XRP-SE-L2#readme",
+  "dependencies": {
+    "ilp-settlement-core": "^0.1.1"
+  }
 }
